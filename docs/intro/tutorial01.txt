@@ -329,6 +329,9 @@ text "*Hello, world. You're at the polls index.*", which you defined in the
 
     If you get an error page here, check that you're going to
     http://localhost:8000/polls/ and not http://localhost:8000/.
+    Also make sure you didn't accidentally create the file ``mysite/urls.py``
+    in the outer ``mysite/`` directory. (``mysite/mysite/urls.py``) You should
+    modify the file in the inner ``mysite/`` directory. ( ``mysite/urls.py``)
 
 The :func:`~django.urls.path` function is passed four arguments, two required:
 ``route`` and ``view``, and two optional: ``kwargs``, and ``name``.
